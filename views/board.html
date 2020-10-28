@@ -1,0 +1,107 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A cool thing made with Glitch">
+
+    <title>PlanOver &middot; </title>
+
+    <link id="favicon" rel="icon" href="/icon.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/board.css">
+    
+    <script src="/script.js" defer></script>
+    
+    <link rel="manifest" href="/manifest.json">
+  </head>
+<body onload="boardLoad()">
+  <header>
+    <span id="open-btn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <span id="usernameBoard"></span><h1></h1>
+  </header>
+    <div class="row">
+      <div class="rightcolumn">
+     <div class="card">
+       <h1>
+         INFORMATION:
+       </h1>
+       <span class="username-span">Owner:<br>
+         <span id="usernameCard"></span>
+      </span>
+      <span class="board-span">Board Code:<br>
+        <div class="tooltip" onclick="copyCode()">
+          <span class="tooltiptext" id="copyCodeTooltip">Copy Code</span>
+      <span id="boardCard"></span>
+        </div>
+      </span>
+     </div>
+      <div class="card">
+        <span class="users-span">Online Users:<br>
+         <span id="usersCard"></span>
+       </span>
+      </div>
+    </div>
+  <div class="leftcolumn">
+    <div class="card">
+      <table id="table">
+        
+      </table>
+      <table>
+        <tr><th><button id="create-new-btn" onclick="document.getElementById('id01').style.display='block'">Create New</button></th></tr>
+      </table>
+    </div>
+  </div>
+<div class="row">
+    
+  </div>
+<body2>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a onclick="signOut()"><button2 style="width:auto;">Sign out</button2></a>
+  <a href="/dashboard">Dashboard</a>
+  <a id="installBtn" onclick="installApp()"><button2 style="width:auto;">Install App</button2></a>
+  <br>
+  <a href="#">Infomation</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<div id="main">
+<!--   <span id="open-btn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; &nbsp; Open</span> -->
+</div>
+
+  
+</body2>
+  <div id="id01" class="modal">
+  
+  <div class="modal-content animate" action="test.html">
+
+<div class="container">
+ <body>
+    Task:
+    <input id="task">
+    Person in charge:
+<!--     <input id="personInCharge"> -->
+   <br>
+    <select id="personInCharge" onclick="loadDropdown()">
+    </select>
+    <button id="button" onclick="addTask()">
+      Add Task
+    </button>
+  </body>
+</div>
+    
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </div>
+  </div>
+      
+  </div>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A cool thing made with Glitch">
+
+    <title>PlanOver &middot; Dashboard</title>
+
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/dashboard.css">
+    
+    <script src="/script.js" defer></script>
+    
+    <link rel="manifest" href="/manifest.json">
+  </head>
+<body onload="dashboardLoad()">
+  <header>
+    <span id="open-btn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <span id="usernameBoard"></span><h1>Dashboard</h1>
+  </header>
+  
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+   
+    </div>
+  </div>
+  <div class="rightcolumn"  >
+     <div class="card">
+       <h1>
+         BOARDS:
+       </h1>
+        <span id="boardsCard"></span>
+     </div>
+    
+    <div class="card">
+       <h1>
+         JOINED BOARDS:
+       </h1>
+        <span id="joinedBoardsCard"></span>
+     </div>
+   </div>
+  </div>
+</body>
+<body2>
+  
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a onclick="signOut()"><button2 style="width:auto;">Sign out</button2></a>
+  <a onclick="document.getElementById('id02').style.display='block'"><button2 style="width:auto;">Join Board</button2></a>
+  <a id="installBtn" onclick="installApp()"><button2 style="width:auto;">Install App</button2></a>
+  <br>
+  <a href="#">Infomation</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<div id="main">
+<!--   <span id="open-btn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; &nbsp; Open</span> -->
+</div>
+
+  
+</body2>
+  
+  <div id="id01" class="modal">
+  
+  <div class="modal-content animate" action="test.html">
+
+<div class="container">
+ <body>
+    Board Name:
+    <input id="newBoardName" oninput="newBoardNameInput()">
+    <button id="createBoardButton" onclick="createBoard()">
+      Create
+    </button>
+  </body>
+</div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </div>
+  </div>
+  
+  <div id="id02" class="modal">
+  
+  <div class="modal-content animate" action="test.html">
+
+<div class="container">
+ <body>
+    Board Code:
+    <input id="boardCode" oninput="boardCodeInput()">
+    <button id="joinBoard" onclick="joinBoard()">
+      Join
+    </button>
+  </body>
+</div>
+
+    
+    
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </div>
+  </div>
+</html>

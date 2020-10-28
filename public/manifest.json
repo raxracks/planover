@@ -1,0 +1,16 @@
+{
+  "name": "PlanOver",
+  "short_name": "PlanOver",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#2A3443",
+  "description": "Manage your work easily!",
+  "theme_color": "#2A3443",
+  "icons": [
+    {
+      "src": "/icon.jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

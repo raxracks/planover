@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A cool thing made with Glitch">
+    <meta name="google-site-verification" content="kH6_52Ds4QR1BcRBRp7pHEfyXOodD2rFNiGQ0THJAkM" />
+    
+    <title>PlanOver</title>
+
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <script src="/script.js" defer></script>
+    
+    <link rel="manifest" href="/manifest.json">
+  </head>
+<body>
+  <header>
+  <span id="open-btn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <span id="usernameBoard"></span><h1>PlanOver</h1>
+  </header>
+  <div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h1>
+   What is PlanOver?
+      </h1>
+      <p>
+        PlanOver is work management site, which accelerates tedious tasks, greatly easing the workload on your team.
+      </p>
+    </div>
+  </div>
+    <div class="rightcolumn">
+    <div class="card">
+      <h1>
+   How to use PlanOver
+      </h1>
+      <p>
+        First thing you'll need to do is make an account. You can do this by clicking Sign up down below (If you have an account already you will just have to click Sign in). 
+        Once you have made an account you’ll need to go to your email and just verify the account.
+      </p>
+      <br>
+      <p>
+        Once verified your account you will be sent to the Dashboard. To find out how to use the dashboard, make an account and more help will be there.
+      </p>
+      <span id="accountmanagement-section">
+        <button class="signup-btn" onclick="document.getElementById('id01').style.display='block'">
+          Sign up
+        </button>
+        <button class="signin-btn" onclick="document.getElementById('id02').style.display='block'">
+          Sign in
+        </button>
+      </span>
+    </div>
+  </div>
+  </div>
+</body>
+<body2>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a onclick="document.getElementById('id01').style.display='block'"><button2 style="width:auto;">Sign up</button2></a>
+  <a onclick="document.getElementById('id02').style.display='block'"><button2 style="width:auto;">Sign in</button2></a>
+  <a onclick="document.getElementById('id03').style.display='block'"><button2 style="width:auto;">Magic</button2></a>
+  <a id="installBtn" onclick="installApp()"><button2 style="width:auto;">Install App</button2></a>
+  <br>
+  <a href="magic.html">Infomation</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>  
+</body2>
+  <div id="id01" class="modal">
+  
+  <div class="modal-content animate" action="test.html">
+
+<div class="container">
+ <body>
+    First name:
+    <input id="firstname" class="fname" type="text">
+    Username:
+    <input id="username" type="text">
+    Email:
+    <input id="email" type="text">
+    Password:
+    <input id="password" type="password">
+    <button id="button" onclick="signUp()">
+    Sign up
+    </button>
+  </body>
+</div>
+    
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </div>
+  </div>
+  
+  <div id="id02" class="modal">
+  
+  <div class="modal-content animate" action="test.html">
+
+<div class="container">
+ <body>
+    <label for="usernameLogin"><b>Username</b></label>
+    <input id="usernameLogin" type="text" autocomplete="username">
+    <label for="passwordLogin"><b>Password</b></label>
+    <input id="passwordLogin" type="password" autocomplete="current-password">
+    <button id="signIn" onclick="signIn()">
+    Sign in
+    </button>
+  </body>
+</div>
+    
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </div>
+  </div>
+  
+   <div id="id03" class="modal">
+  
+  <div class="modal-content animate" action="test.html">
+
+<div class="container">
+<p>
+  magic
+  </p>
+</div>
+    
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Close</button>
+    </div>
+  </div>
+  </div>
+  
+  
+  
+</html>
