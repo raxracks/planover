@@ -47,7 +47,11 @@ app.get('/dashboard', (req, res) => {
   if(!user || user.password !== password) return res.redirect("/");
   if(!user.verified) return res.redirect("/");
   
-  res.sendFile(__dirname + "/views/dashboard.html")
+  res.sendFile(__dirname + "/views/dashboard.html");
+});
+
+app.get('/fakeboard', (req, res) => {
+  res.sendFile(__dirname + "/views/board.html");
 });
 
 app.get('/forbidden', (req, res) => {

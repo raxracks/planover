@@ -20,7 +20,7 @@
 <body onload="boardLoad()">
   <header>
     <span id="open-btn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-    <span id="usernameBoard"></span><h1></h1>
+    <span id="usernameBoard"><h3>&nbsp;</h3></span>
   </header>
     <div class="row">
       <div class="rightcolumn">
@@ -32,10 +32,10 @@
          <span id="usernameCard"></span>
       </span>
       <span class="board-span">Board Code:<br>
-        <div class="tooltip" onclick="copyCode()">
+        <span class="tooltip" onclick="copyCode()">
           <span class="tooltiptext" id="copyCodeTooltip">Copy Code</span>
       <span id="boardCard"></span>
-        </div>
+        </span>
       </span>
      </div>
       <div class="card">
@@ -57,13 +57,12 @@
 <div class="row">
     
   </div>
-<body2>
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a onclick="signOut()"><button2 style="width:auto;">Sign out</button2></a>
+  <a onclick="signOut()"><span style="width:auto;">Sign out</span></a>
   <a href="/dashboard">Dashboard</a>
-  <a id="installBtn" onclick="installApp()"><button2 style="width:auto;">Install App</button2></a>
+  <a id="installBtn" onclick="installApp()"><span style="width:auto;">Install App</span></a>
   <br>
   <a href="#">Infomation</a>
   <a href="#">Clients</a>
@@ -74,14 +73,12 @@
 <!--   <span id="open-btn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; &nbsp; Open</span> -->
 </div>
 
+    <div id="id01" class="modal">
   
-</body2>
-  <div id="id01" class="modal">
-  
-  <div class="modal-content animate" action="test.html">
+  <div class="modal-content animate">
 
 <div class="container">
- <body>
+ <div>
     Task:
     <input id="task">
     Person in charge:
@@ -92,7 +89,7 @@
     <button id="button" onclick="addTask()">
       Add Task
     </button>
-  </body>
+  </div>
 </div>
     
 

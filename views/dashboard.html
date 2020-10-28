@@ -45,15 +45,13 @@
      </div>
    </div>
   </div>
-</body>
-<body2>
   
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a onclick="signOut()"><button2 style="width:auto;">Sign out</button2></a>
-  <a onclick="document.getElementById('id02').style.display='block'"><button2 style="width:auto;">Join Board</button2></a>
-  <a id="installBtn" onclick="installApp()"><button2 style="width:auto;">Install App</button2></a>
+  <a onclick="signOut()"><span style="width:auto;">Sign out</span></a>
+  <a onclick="document.getElementById('id02').style.display='block'"><span style="width:auto;">Join Board</span></a>
+  <a id="installBtn" onclick="installApp()"><span style="width:auto;">Install App</span></a>
   <br>
   <a href="#">Infomation</a>
   <a href="#">Clients</a>
@@ -63,22 +61,19 @@
 <div id="main">
 <!--   <span id="open-btn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; &nbsp; Open</span> -->
 </div>
-
-  
-</body2>
   
   <div id="id01" class="modal">
   
-  <div class="modal-content animate" action="test.html">
+  <div class="modal-content animate">
 
 <div class="container">
- <body>
+ <div>
     Board Name:
     <input id="newBoardName" oninput="newBoardNameInput()">
     <button id="createBoardButton" onclick="createBoard()">
       Create
     </button>
-  </body>
+  </div>
 </div>
 
     <div class="container" style="background-color:#f1f1f1">
@@ -89,16 +84,16 @@
   
   <div id="id02" class="modal">
   
-  <div class="modal-content animate" action="test.html">
+  <div class="modal-content animate">
 
 <div class="container">
- <body>
+ <div>
     Board Code:
     <input id="boardCode" oninput="boardCodeInput()">
     <button id="joinBoard" onclick="joinBoard()">
       Join
     </button>
-  </body>
+  </div>
 </div>
 
     
@@ -109,4 +104,5 @@
     </div>
   </div>
   </div>
+  </body>
 </html>

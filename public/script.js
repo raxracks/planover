@@ -186,6 +186,7 @@ let oldData = data;
 let users = {};
 let oldUsers = users;
 let readyToLoadTasks = true;
+let selectedUser = "";
 
 async function boardLoad() {
   let path = document.location.pathname.split("/");
@@ -259,9 +260,19 @@ function updateUsers(username, boardCode, socket) {
       if(users[key].status == "online") {
         document.getElementById("usersCard").innerHTML += key + "<br>";
       }
-      document.getElementById("personInCharge").innerHTML += "<option value='" + key + "'>" + key + "</option>"
+      
+      if(selectedUser == key) {
+        document.getElementById("personInCharge").innerHTML += "<option selected class='personOption' value='" + key + "'>" + key + "</option>";
+      } else {
+        document.getElementById("personInCharge").innerHTML += "<option class='personOption' value='" + key + "'>" + key + "</option>"
+      }
     });
+    oldUsers = users;
   }
+}
+
+function loadDropdown() {
+  selectedUser = document.getElementById("personInCharge").value;
 }
 
 function newBoardNameInput() {
