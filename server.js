@@ -10,6 +10,15 @@ const nodemailer = require('nodemailer');
 app.use(express.static("public"));
 app.use(cookieParser());
 
+app.enable('trust proxy');
+
+app.use(function(request, response, next) {
+  if (process.env.NODE_ENV != 'development' && !request.secure) {
+    response.redirect("https://" + request.headers.host + request.url) 
+  } 
+  next();
+});
+
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {

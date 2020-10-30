@@ -1,5 +1,4 @@
 window.addEventListener('load', e => {
-  if(document.location.protocol !== "https:") return document.location.href = "https://" + document.location.href.split("http://").join("");
   registerSW(); 
   if (window.matchMedia("(display-mode: standalone)").matches) {
     document.getElementById("installBtn").style.display = "none";
